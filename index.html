@@ -1,143 +1,198 @@
 
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajveer Sahu | Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: #222;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid #fff;
-            margin-bottom: 15px;
-            animation: fadeZoom 1.5s ease-in-out forwards;
-            opacity: 0;
-            transform: scale(0.8);
-        }
-        @keyframes fadeZoom {
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-        header h1 {
-            margin: 0;
-        }
-        header a {
-            color: #1e90ff;
-            text-decoration: none;
-        }
-        section {
-            background: #fff;
-            margin: 20px auto;
-            padding: 20px;
-            max-width: 900px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h2 {
-            border-bottom: 2px solid #1e90ff;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-            color: #1e90ff;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rajveer Sahu | Portfolio</title>
+  <meta name="description" content="Portfolio website for Rajveer Sahu — projects, resume, and contact." />
+  <meta property="og:title" content="Rajveer Sahu | Portfolio" />
+  <meta property="og:description" content="Projects, resume, and contact." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="https://fav.farm/⭐" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+  </style>
 </head>
-<body>
+<body class="text-slate-800 bg-white">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between h-16">
+        <a href="#home" class="font-semibold tracking-tight text-slate-900">Rajveer Sahu</a>
+        <button id="navToggle" class="md:hidden p-2 rounded-xl border border-slate-300" aria-label="Toggle menu">☰</button>
+        <nav id="nav" class="hidden md:flex md:gap-6 text-sm">
+          <a class="hover:text-slate-900 text-slate-600" href="#home">Home</a>
+          <a class="hover:text-slate-900 text-slate-600" href="#about">About</a>
+          <a class="hover:text-slate-900 text-slate-600" href="#resume">Resume</a>
+          <a class="hover:text-slate-900 text-slate-600" href="#portfolio">Portfolio</a>
+          <a class="hover:text-slate-900 text-slate-600" href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div id="mobile" class="md:hidden hidden pb-3">
+        <div class="flex flex-col gap-2 text-sm">
+          <a class="px-2 py-1 rounded-lg hover:bg-slate-100" href="#home">Home</a>
+          <a class="px-2 py-1 rounded-lg hover:bg-slate-100" href="#about">About</a>
+          <a class="px-2 py-1 rounded-lg hover:bg-slate-100" href="#resume">Resume</a>
+          <a class="px-2 py-1 rounded-lg hover:bg-slate-100" href="#portfolio">Portfolio</a>
+          <a class="px-2 py-1 rounded-lg hover:bg-slate-100" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<header>
-    <img src="your-photo.jpg" alt="Rajveer Sahu">
-    <h1>Rajveer Sahu</h1>
-    <p>
-        📞 +91-7489310096 | 
-        📧 <a href="mailto:Idrajveersahu@gmail.com">Idrajveersahu@gmail.com</a> | 
-        🔗 <a href="https://linkedin.com/in/rajveersahu" target="_blank">LinkedIn</a>
-    </p>
-</header>
+  <!-- Hero -->
+  <section id="home" class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <p class="text-sm uppercase tracking-widest text-slate-500">Hello</p>
+        <h1 class="mt-2 text-4xl md:text-5xl font-bold leading-tight">I'm <span class="text-slate-900">Rajveer Sahu</span></h1>
+        <p class="mt-4 text-slate-600">Mechanical engineering student at MANIT Bhopal. Passionate about vehicle dynamics, renewable energy, and reverse engineering. This is my profile website inspired by clean one‑page layouts.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#portfolio" class="inline-block px-4 py-2 rounded-2xl bg-slate-900 text-white shadow">See Projects</a>
+          <a href="Rajveer%20Sahu.pdf" class="inline-block px-4 py-2 rounded-2xl border border-slate-300">Download CV</a>
+        </div>
+      </div>
+      <div class="md:justify-self-end">
+        <img class="w-full max-w-xs md:max-w-sm rounded-2xl shadow" alt="Profile placeholder" src="https://images.unsplash.com/photo-1520975922138-8bafc0c76b6b?q=80&w=1200&auto=format&fit=crop" />
+      </div>
+    </div>
+  </section>
 
-<section>
-    <h2>Education</h2>
-    <ul>
-        <li><b>B.Tech, Mechanical Engineering</b> — NIT Bhopal (CGPA: 8.4, 2026)</li>
-        <li>Higher Secondary — Gov. Venkat Excellence H.S. School No.1, Satna (8.82, 2021)</li>
-        <li>Secondary — Gov. Venkat Excellence H.S. School No.1, Satna (8.9, 2019)</li>
-    </ul>
-</section>
+  <!-- About -->
+  <section id="about" class="py-16 border-t border-slate-200 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-semibold">About Me</h2>
+      <p class="mt-4 max-w-3xl text-slate-600">I’m a final‑year Mechanical Engineering student at MANIT Bhopal with CGPA 8.2. My areas of interest include vehicle dynamics, renewable energy, and reverse engineering. I’ve held leadership roles such as Vice Captain for Team Equinox in SAE H‑BAJA and Suspension Coordinator in SAE MANIT.</p>
+    </div>
+  </section>
 
-<section>
-    <h2>Experience</h2>
-    <p><b>KJS Cement Ltd</b> — Vocational Training, Maihar (May 2024 - Jun 2024)</p>
-    <ul>
-        <li>Worked in Captive Power Plants division</li>
-        <li>Studied WHRS (Waste Heat Recovery System) in cement plants</li>
-        <li>Analyzed conveyor belts for coal supply and identified losses</li>
-    </ul>
-</section>
+  <!-- Resume / Experience -->
+  <section id="resume" class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-semibold">Resume</h2>
 
-<section>
-    <h2>Projects</h2>
-    <ul>
-        <li><b>H-BAJA ATV</b> — Suspension design, pneumatic suspension, double wishbone geometry</li>
-        <li><b>E-BAJA ATV</b> — Knuckle design for stability, improved steering effort</li>
-        <li><b>Synchromesh Gearbox</b> — CAD design & 3D printing, PLA synchronizer ring</li>
-    </ul>
-</section>
+      <div class="mt-8 grid md:grid-cols-2 gap-8">
+        <!-- Experience -->
+        <div>
+          <h3 class="font-medium">Experience</h3>
+          <ol class="mt-4 relative border-s border-slate-200">
+            <li class="ms-4 py-4">
+              <div class="absolute w-2 h-2 bg-slate-400 rounded-full -left-1.5 mt-2"></div>
+              <div class="flex items-center justify-between gap-2">
+                <p class="font-medium">Vocational Training Intern — KJS Cement Ltd</p>
+                <span class="text-xs text-slate-500">May 2024 – Jul 2024</span>
+              </div>
+              <ul class="mt-2 text-sm text-slate-600 list-disc ms-4">
+                <li>Worked in the Captive Power Plants division.</li>
+                <li>Studied Waste Heat Recovery System in cement plants.</li>
+                <li>Analyzed coal conveyor systems and identified inefficiencies.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+        <!-- Education / Highlights -->
+        <div>
+          <h3 class="font-medium">Education & Highlights</h3>
+          <ul class="mt-4 space-y-3 text-sm text-slate-700">
+            <li>B.Tech, Mechanical Engineering, MANIT Bhopal (2026) — CGPA 8.2</li>
+            <li>Vice Captain, Team Equinox (H‑BAJA 2025)</li>
+            <li>Suspension Coordinator, SAE MANIT (2023‑24)</li>
+          </ul>
+          <a href="Rajveer%20Sahu.pdf" class="inline-block mt-4 text-sm text-slate-700 underline">View full CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li><b>Programming:</b> C, Java</li>
-        <li><b>Software:</b> Solidworks, Creo, Ansys, Lotus Shark, IPG CarMaker</li>
-        <li><b>Soft Skills:</b> Leadership, Teamwork, Time Management, Collaboration</li>
-    </ul>
-</section>
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-16 border-t border-slate-200 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-end justify-between gap-4">
+        <h2 class="text-2xl font-semibold">Portfolio</h2>
+      </div>
 
-<section>
-    <h2>Certifications</h2>
-    <ul>
-        <li>H-BAJA SAEINDIA (Jan 2025)</li>
-        <li>E-BAJA SAEINDIA (Mar 2024)</li>
-        <li>FEA by Skill-Lync (Aug 2024)</li>
-    </ul>
-</section>
+      <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Project 1 -->
+        <article class="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm">
+          <img class="h-44 w-full object-cover" src="https://images.unsplash.com/photo-1549924231-f129b911e442?q=80&w=1200&auto=format&fit=crop" alt="H-BAJA ATV" />
+          <div class="p-4">
+            <h3 class="font-medium">H‑BAJA ATV</h3>
+            <p class="mt-1 text-sm text-slate-600">Optimized suspension geometry, designed double wishbone, and implemented pneumatic suspension for quick response.</p>
+            <div class="mt-3 flex gap-2 text-xs">
+              <span class="px-2 py-1 rounded-xl bg-slate-100">SolidWorks</span>
+              <span class="px-2 py-1 rounded-xl bg-slate-100">ANSYS</span>
+              <span class="px-2 py-1 rounded-xl bg-slate-100">Lotus Shark</span>
+              <span class="px-2 py-1 rounded-xl bg-slate-100">IPG CarMaker</span>
+            </div>
+          </div>
+        </article>
+        <!-- Project 2 -->
+        <article class="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm">
+          <img class="h-44 w-full object-cover" src="https://images.unsplash.com/photo-1505577058444-a3dab90d4253?q=80&w=1200&auto=format&fit=crop" alt="E-BAJA ATV" />
+          <div class="p-4">
+            <h3 class="font-medium">E‑BAJA ATV</h3>
+            <p class="mt-1 text-sm text-slate-600">Designed new steering knuckles to improve straight‑line stability and reduced steering effort for vehicle handling.</p>
+            <div class="mt-3 flex gap-2 text-xs">
+              <span class="px-2 py-1 rounded-xl bg-slate-100">Creo</span>
+              <span class="px-2 py-1 rounded-xl bg-slate-100">SolidWorks</span>
+              <span class="px-2 py-1 rounded-xl bg-slate-100">ANSYS</span>
+            </div>
+          </div>
+        </article>
+        <!-- Project 3 -->
+        <article class="rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm">
+          <img class="h-44 w-full object-cover" src="https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?q=80&w=1200&auto=format&fit=crop" alt="Synchromesh Gearbox" />
+          <div class="p-4">
+            <h3 class="font-medium">Synchromesh Gearbox</h3>
+            <p class="mt-1 text-sm text-slate-600">Conducted CAD design and 3D printing of gearbox with PLA material for smooth gear shifting up to 2300 rpm.</p>
+            <div class="mt-3 flex gap-2 text-xs">
+              <span class="px-2 py-1 rounded-xl bg-slate-100">Creo</span>
+              <span class="px-2 py-1 rounded-xl bg-slate-100">ANSYS</span>
+              <span class="px-2 py-1 rounded-xl bg-slate-100">3D Printing</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
-<section>
-    <h2>Achievements</h2>
-    <ul>
-        <li>Vice Captain — H-BAJA 2025 (Pithampur, Indore)</li>
-        <li>Participant — E-BAJA 2024 (Hyderabad)</li>
-    </ul>
-</section>
+  <!-- Contact -->
+  <section id="contact" class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-semibold">Contact</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="p-4 rounded-2xl border border-slate-200">
+          <p class="text-sm text-slate-500">Email</p>
+          <a class="block text-slate-800 hover:underline" href="mailto:Idrajveersahu@gmail.com">Idrajveersahu@gmail.com</a>
+        </div>
+        <div class="p-4 rounded-2xl border border-slate-200">
+          <p class="text-sm text-slate-500">Location</p>
+          <p class="text-slate-800">Bhopal, India</p>
+        </div>
+        <div class="p-4 rounded-2xl border border-slate-200">
+          <p class="text-sm text-slate-500">Links</p>
+          <div class="flex gap-4 text-slate-800">
+            <a class="underline" href="https://github.com/RajveerSahu">GitHub</a>
+            <a class="underline" href="https://www.linkedin.com/in/rajveersahu">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section>
-    <h2>Positions of Responsibility</h2>
-    <ul>
-        <li>Vice Captain — Team Equinox, H-BAJA 2024-2025</li>
-        <li>Suspension Coordinator — SAE MANIT 2024-2025</li>
-    </ul>
-</section>
+  <footer class="py-8 border-t border-slate-200 text-center text-sm text-slate-500">
+    <p>Updated Sep 2025 © Rajveer Sahu</p>
+  </footer>
 
+  <script>
+    const btn = document.getElementById('navToggle');
+    const mobile = document.getElementById('mobile');
+    btn?.addEventListener('click', () => {
+      mobile.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
+
